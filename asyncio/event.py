@@ -69,7 +69,7 @@ class Event:
 # that asyncio will poll until a flag is set.
 # Note: Unlike Event, this is self-clearing.
 try:
-    import uio
+    import io
 
     class ThreadSafeFlag(uio.IOBase):
         def __init__(self):
